@@ -1,0 +1,13 @@
+{
+  "name": "torrentflxi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "TorrentFlxi: free movie and TV catalog with your own player and torrent search.",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && for f in lib/*.js public/app.js; do node --check $f || exit 1; done",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": { "node": ">=22.12.0" }
+}
